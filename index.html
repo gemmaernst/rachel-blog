@@ -12,19 +12,20 @@ featured-image_path: /uploads/pr-photos-6472.jpg
     </div>
   </section>
 
-
-  {% for item in site.posts limit:5 %}
-    <div>
-      <a href="#">
-        <div class="col-6_md-6 padding-grid">
-          <h3 class="centered">{{item.categories}}</h3>
-          <h2 class="centered">{{item.title}}</h2>
-        </div>
-        <div class="image champion-bg" style="background-image:url('{{item.image}}')"></div>
-        <p>{{item.excerpt}}</p>
-      </a>
-    </div>
-        {% endfor %}
+  <section>
+    {% for item in site.posts limit:5 %}
+      <div>
+        <a href="#">
+          <div class="col-6_md-6 padding-grid">
+            <h3 class="centered">{{item.categories}}</h3>
+            <h2 class="centered">{{item.title}}</h2>
+          </div>
+          <div class="image champion-bg" style="background-image:url('{{item.image}}')"></div>
+          <p>{{item.excerpt}}</p>
+        </a>
+      </div>
+      {% endfor %}
+    </section>
 
   <section class="centered" id="register">
     <h2> Heading </h2>
