@@ -1,0 +1,21 @@
+<div class="col-4_sm-12 mob-hide sidebar">
+    <div>
+      <h3> This is a sidebar box </h3>
+      <p> You can edit the content of the sidebar box in your post layout. </p>
+      <img src="/images/yoga-1.jpg">
+    </div>
+    <div>
+      <p> You could put anything you want in here, like links to your social or featured articles, a newsletter signup, etc </p>
+    </div>
+
+      <h3> Categories </h3>
+
+      <!-- this will output a list of all the categories on your site -->
+      <ul>
+        {% for category in site.categories %}
+        <li>
+          <a href="/{{category | first }}" class="category"> {{category | first}} </a>
+        </li>
+        {% endfor %}
+      </ul>
+  </div>

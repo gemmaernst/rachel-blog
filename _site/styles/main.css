@@ -173,6 +173,13 @@ footer nav .fa,
   min-height: 20vh;
 }
 
+.bg-image {
+  background-color: rgb(240,240,240); /* featured-color */
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 50%;
+}
+
 /* Buttons */
  button,
 .button,

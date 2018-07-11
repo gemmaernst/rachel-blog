@@ -12,7 +12,9 @@ featured-image_path: /uploads/pr-photos-6472.jpg
     </div>
   </section>
 
-  <section>
+  <section class="grid">
+    <!-- Main content block -->
+    <div class="col-8">
     {% for item in site.posts limit:5 %}
       <div>
         <a href="#">
@@ -20,11 +22,16 @@ featured-image_path: /uploads/pr-photos-6472.jpg
             <h3 class="centered">{{item.categories}}</h3>
             <h2 class="centered">{{item.title}}</h2>
           </div>
-          <div class="image champion-bg" style="background-image:url('{{item.image}}')"></div>
+          <div class="bg-image" style="background-image:url('{{item.image_path}}')"></div>
           <p>{{item.excerpt}}</p>
         </a>
       </div>
       {% endfor %}
+    </div>
+
+    <!-- Sidebar  -->
+    {% include sidebar.html %}
+
     </section>
 
   <section class="centered" id="register">
